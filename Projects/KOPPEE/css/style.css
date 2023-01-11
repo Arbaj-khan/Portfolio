@@ -1,0 +1,1297 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #DA9F5B;
+    --secondary: #33211D;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #FFFBF2;
+    --dark: #111111;
+    --font-family-sans-serif: "Montserrat", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family:"Montserrat", sans-serif;
+    background-color: #FFFBF2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary);
+}
+ 
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    font-size: 3.5rem;
+    margin-top: 0.5rem;
+}
+
+h4{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.inner{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+/*============================================
+Header-section-start......
+===================================================*/
+/*============================
+Navigation-start......
+==============================*/
+.navigation{
+    width: 100%;
+    height: 5rem;
+    padding-right: 1rem;
+    position: absolute;
+    top: 3%;
+    z-index: 10;
+}
+
+.navigation .logo{
+    font-size: 2.2rem;
+    line-height: 5rem;
+    padding-left: 2rem;
+}
+
+.navigation .logo h1{
+    color: var(--white);
+}
+.navigation ul{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+
+.navigation ul li{
+    margin-right: 2rem;
+    line-height: 5rem;
+}
+
+.navigation ul li a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:var(--white);
+}
+
+.navigation ul li .active{
+    color:var(--primary);
+}
+
+.navigation ul li a:hover{
+    color:var(--primary);
+}
+
+.navigation ul ul{
+    margin-top: -1rem;
+    width: 10rem;
+    background-color: var(--white);
+    padding-left: 1rem;
+    box-shadow: 2px 2px 6px 2px #000;
+    visibility: hidden;
+    transition: all 0.5s linear;
+    position: absolute;
+}
+
+.navigation ul ul .margin{
+    margin-top: -2.7rem;
+    margin-bottom: -1.1rem;
+}
+.navigation ul ul li a{
+    color: var(--dark);
+    display: block;
+    margin-top: -1.3rem;
+}
+
+.navigation ul li:hover > ul{
+    opacity: 1;
+    visibility:visible;
+}
+
+.navigation .toggle{
+    width: 2.5rem;
+    height: 2.3rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 3px;
+    display: none;
+}
+
+.navigation .toggle span{
+    font-size: 2rem;
+    color: rgba(255,255,255,0.3);
+}
+/*==========================================
+Banner-start.....
+============================================*/
+.banner{
+    text-align: center;
+    position: relative;
+} 
+
+.banner::after{
+    position: absolute;
+    left: 0;
+    top: 98%;
+    content:"";
+    background-image: url(../image/overlay-bottom.png);
+    width: 100%;
+    height: 15px;   
+}
+
+.banner .img-box{
+    position: relative;
+}
+
+.banner .img-box::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .text{
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    left: 0;
+}
+
+.banner .first-heading{
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--primary);
+}
+
+.banner .secend-heading{
+    font-size: 7rem;
+    color: var(--white);
+    margin-top: 0.5rem;
+}
+
+.banner .thred-heading{
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+.banner .owl-dots{
+    display: none;
+}
+
+.banner .owl-prev{
+    position: absolute;
+    top: 42%;
+    left: 5%;
+}
+
+.banner .owl-next{
+    position: absolute;
+    top: 42%;
+    right:5%;
+}
+
+.banner b:hover{
+    background: none !important;
+}
+
+.banner b{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+/*======================================
+About-section-start....
+=======================================*/
+.about-section{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.about-section .about-top{
+    font-size: 1.6rem;
+    font-weight: 500;
+    word-spacing: 0.3rem;
+    letter-spacing:2px;
+    color: var(--primary);
+    position: relative;
+}
+
+.about-section .about-top::before{
+    position: absolute;
+    top: -6.5rem;
+    left: 50%;
+    content: "";
+    width: 2px;
+    height: 6rem;
+    background-color: var(--primary);
+}
+
+.about-section .about-main{
+    font-size: 3.5rem;
+    margin-top: 0.5rem;
+}
+
+.about-section .about-inside{
+    margin-top: 3rem;
+}
+.about-section .about-inside .left{
+    width: 33%;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.about-section .about-inside .mid{
+    width: 33%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-section .about-inside .mid img{
+    width: 100%;
+}
+.about-section .about-inside .right{
+    width: 33%;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.about-section .about-inside h3{
+    font-size:2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section .about-inside h5{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.about-section .about-inside p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.about-section .about-inside .para-one{
+    margin-bottom: 2rem;
+}
+
+.about-section .about-inside h6{
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+}
+
+.about-section .about-inside h6 i{
+    color: var(--primary);
+    padding-right: 0.8rem;
+}
+
+#margin{
+    margin-bottom: 2rem;
+}
+
+.about-section .about-inside a{
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: var(--font-family-sans-serif);
+}
+
+.about-section .about-inside .left a{
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+    color: var(--white);
+    margin-top: 1rem;
+}
+.about-section .about-inside .right a{
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: 1rem;
+}
+
+
+/*===========================================
+Service-section-start........
+=============================================*/
+.service-section{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.service-section .service-top{
+    position: relative;
+    word-spacing: 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.service-section .service-top::before{
+    position: absolute;
+    top: -6.5rem;
+    left: 50%;
+    content: "";
+    width: 2px;
+    height: 6rem;
+    background-color: var(--primary);
+}
+
+.service-section .service-inside{
+    margin-top: 3rem;
+}
+
+.service-section .service-inside .box-one{
+    width: 48%;
+    margin-bottom: 2rem;
+}
+
+.service-section .service-inside .box-one .img{
+    width: 40%;
+}
+
+.service-section .service-inside .box-one .img img{
+    width: 100%;
+}
+
+.service-section .service-inside .box-one .text{
+    width: 56%;
+   margin-top: 1rem;
+   text-align: left;
+}
+
+.service-section .service-inside .box-one .text h4{
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.service-section .service-inside .box-one .text h4 i{
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 100%;
+    background-color: var(--primary);
+    margin-right: 0.5rem;
+    color: rgb(51, 19, 4);
+}
+
+.service-section .service-inside .box-one .text p{
+    line-height: 1.5rem;
+}
+
+/*=========================================
+offer-section-start.........
+============================================*/
+.offer-section{
+    margin-top: 5rem;
+    background: linear-gradient(rgba(51,33,29,0.9), rgba(51,33,29,0.9)),url(../image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    position: relative;
+}
+
+.offer-section::before{
+    position: absolute;
+    left: 0;
+    top: -0.1%;
+    content:"";
+    background-image: url(../image/overlay-top.png);
+    width: 100%;
+    height: 15px;
+    
+}
+
+.offer-section::after{
+    position: absolute;
+    left: 0;
+    top: 98%;
+    content:"";
+    background-image: url(../image/overlay-bottom.png);
+    width: 100%;
+    height: 15px;   
+}
+
+.offer-section .offer-top{
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+.offer-section .offer-main{
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.offer-section .offer-head{
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.offer-section form #Email{
+    width: 23%;
+    height: 3.5rem;
+    border: none;
+    margin-left: -4.5rem;
+    position: relative;
+    outline: none;
+    padding-left: 1rem;
+}
+
+.offer-section form #Email::placeholder{
+   
+    font-size: 1rem;
+}
+
+.offer-section form button{
+    width: 6rem;
+    height:3.5rem;
+    border: none;
+    background-color: var(--primary);
+    font-size: 1rem;
+    position: absolute;
+    left: 57%;
+}
+
+/*===========================================
+Menu-section-start........
+=============================================*/
+.menu-section{
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.menu-section .menu-top{
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu-section .menu-top::before{
+    position: absolute;
+    top: -6.5rem;
+    left: 50%;
+    content: "";
+    width: 2px;
+    height: 6rem;
+    background-color: var(--primary);
+}
+
+.menu-section .menu-inside{
+    margin-top: 2rem;
+}
+
+.menu-section .menu-inside .right-menu h2{
+    font-size:2.1rem;
+    margin-bottom: 2rem;
+}
+
+.menu-section .menu-inside .left-menu h2{
+    font-size:2.1rem;
+    margin-bottom: 2rem;
+}
+
+.menu-section .menu-inside .left-menu{
+    width: 48%;
+    text-align: left;
+}
+
+.menu-section .menu-inside .right-menu{
+    width: 48%;
+    text-align: left;
+}
+
+.menu-section .menu-inside .img{
+    width: 24%;
+    position: relative;
+}
+
+.menu-section .menu-inside .img img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.menu-section .menu-inside .img .price{
+    position: absolute;
+    top: 1%;
+    right: -6%;
+    padding: 0.8rem 0.8rem;
+    font-size: 1.5rem;
+    background-color: var(--primary);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-section .menu-inside .text{
+    width: 70%;
+    margin-top: 1rem;
+}
+
+.menu-section .menu-inside .left-one{
+  margin-bottom: 2rem;
+}
+
+.menu-section .menu-inside .right-one{
+    margin-bottom: 2rem;
+}
+
+.menu-section .menu-inside .text h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.menu-section .menu-inside .text p{
+    line-height: 1.5rem;
+}
+
+/*===========================================
+Reservation-section-start....
+=============================================*/
+.Reservation-section{
+    margin-top: 5rem;
+    background: linear-gradient(rgba(51,33,29,0.8), rgba(51,33,29,0.8)),url(../image/bg.jpg);
+    position: relative;
+}
+
+.Reservation-section::before{
+    position: absolute;
+    left: 0;
+    top: -0.1%;
+    content:"";
+    background-image: url(../image/overlay-top.png);
+    width: 100%;
+    height: 15px;
+    
+}
+
+.Reservation-section::after{
+    position: absolute;
+    left: 0;
+    top: 98%;
+    content:"";
+    background-image: url(../image/overlay-bottom.png);
+    width: 100%;
+    height: 15px;   
+}
+
+.Reservation-section .Reservation-left{
+    width: 48%;
+    padding-left: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.Reservation-section .Reservation-form{
+    width: 48%;
+    background-color: var(--secondary);
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-bottom: 6rem;
+}
+
+.Reservation-section .Reservation-left h2{
+    font-size: 4.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.Reservation-section .Reservation-left h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.Reservation-section .Reservation-left p{
+   font-size: 1rem;
+   font-weight:lighter;
+   color: var(--white);
+   line-height: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+.Reservation-section .Reservation-left h6{
+   font-size: 1rem;
+   font-weight: 100;
+   line-height: 2.3rem;
+    color: var(--white);
+}
+
+.Reservation-section .Reservation-left h6 i{
+    color: var(--primary);
+    padding-right: 1rem;
+}
+
+.Reservation-section .Reservation-form h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Reservation-section .Reservation-form input{
+    width: 90%;
+    height: 3rem;
+    padding-left: 1rem;
+    border:1px solid var(--primary);
+    background-color:var(--secondary);
+    margin-bottom: 1rem;
+    outline: 0;
+    outline-color: var(--primary),0.5;
+}
+
+.Reservation-section .Reservation-form input:focus{
+    background-color: var(--primary);
+}
+
+.Reservation-section .Reservation-form input::placeholder{
+    font-size: 1rem;
+}
+
+.Reservation-section .Reservation-form select{
+    width: 90%;
+    height: 3rem;
+    border:1px solid var(--primary);
+    background-color: transparent;
+    margin-bottom: 1rem;
+    outline: 0;
+    outline-color: var(--primary),0.5;
+}
+
+input [type=text],select{
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    color: rgb(99, 98, 98);
+}
+
+.Reservation-section .Reservation-form button{
+    width: 90%;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border:1px solid var(--primary);
+    background-color: var(--primary);
+    transition: all 0.3s linear;
+}
+
+.Reservation-section .Reservation-form button:hover{
+    background-color: #ca812d;
+    border: 1px solid #ca812d;
+}
+
+/*======================================
+Testimonial-section-start.......
+========================================*/
+.testimonial-section{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.testimonial-section .testimonal-head{
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.testimonial-section .testimonal-head::before{
+    position: absolute;
+    top: -6.5rem;
+    left: 50%;
+    content: "";
+    width: 2px;
+    height: 6rem;
+    background-color: var(--primary);
+}
+
+.testimonial-section h2{
+    font-size: 3.5rem;
+}
+
+.testimonial-section .testimonial{
+    margin-top: 4rem;
+}
+
+.testimonial-section .testimonial .item{
+    width: 96%;
+}
+
+.testimonial-section .testimonial .item .img{
+    width: 100%;
+}
+
+.testimonial-section .testimonial .item .img .image{
+    width: 25%;
+}
+
+.testimonial-section .testimonial .item .img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.testimonial-section .testimonial .item .text{
+    width: 70%;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.testimonial-section .testimonial .item .text h4{
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-section .testimonial .item .text i{
+    color: #555;
+}
+
+.testimonial-section .testimonial .item p{
+    text-align: left;
+    color: #555;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+.testimonial .owl-dots .active span{
+    width: 2rem;
+    height: 1rem;
+    background-color: var(--dark) !important;
+}
+
+.testimonial .owl-dots span{
+     padding: 0.6rem !important;
+    background-color: var(--primary) !important;
+}
+
+/*====================================
+Footer-section-start.......
+======================================*/
+.footer-section{
+    margin-top: 5rem;
+    background: linear-gradient(rgba(51,33,29,0.9), rgba(51,33,29,0.9)),url(../image/bg.jpg);
+    position: relative;
+    padding-top: 7rem;
+}
+
+.footer-section::before{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    content:"";
+    background-image: url(../image/overlay-top.png);
+    width: 100%;
+    height: 15px;
+}
+
+.footer-section .box-one{
+    width: 23%;
+}
+
+.footer-section .box-one h4{
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 1.3rem;
+}
+
+.footer-section .box-one p{
+    color: var(--white);
+    margin-bottom: 1.3rem;
+}
+
+.footer-section .box-one p i{
+    color: var(--white);
+    padding-right: 1rem;
+}
+
+.footer-section .box-one span{
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    transition: all 0.3s linear;
+    border-radius: 3px;
+}
+
+.footer-section .box-one span:hover{
+    color: var(--dark);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.footer-section .box-one h6{
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section .Newsletter p{
+    line-height: 1.5rem;
+}
+
+.footer-section .Newsletter{
+    position: relative;
+}
+.footer-section .Newsletter input{
+    width: 80%;
+    height: 3rem;
+    outline: none;
+    padding-left: 1rem;
+}
+
+.footer-section .Newsletter input::placeholder{
+    font-size: 1rem;
+   
+}
+
+.footer-section .Newsletter button{
+    width: 5.5rem;
+    height: 3rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    font-size: 0.9rem;
+    border: none;
+    position: absolute;
+    right:15% ;
+}
+
+.footer-section .footer-div{
+    border-top: 1px solid rgba(256, 256, 256,0.3);
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.footer-section .footer-div p{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: var(--white);
+}
+
+.footer-section .footer-div p a{
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.footer-section .footer-div p a:hover{
+    text-decoration: underline;
+}
+
+/*=======================================================
+MEDIA-QUERY-START.........
+============================================*/
+@media only screen and (max-width:950px){
+    .navigation .toggle{
+        display: block;
+    }
+    .navigation{
+        background-color: var(--secondary);
+        top: 0%;
+        position: relative;
+    }
+
+    .navigation ul{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        width: 100%;
+        background-color: var(--secondary);
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .navigation ul li{
+      margin-bottom: -2rem;
+    }
+
+    .banner .item-one{
+        padding-top: -16rem;
+    }
+
+    .banner .text{
+        position: absolute;
+        width: 100%;
+        top: 20%;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:318px){
+    .banner::after{
+        position: absolute;
+        left: 0;
+        top: 98.5%;  
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .about-section .about-inside .left{
+        width: 100%;
+    }
+
+    .about-section .about-inside .mid{
+        width: 100%;
+    }
+
+    .about-section .about-inside .right{
+        width: 100%;
+    }
+
+    .about-section .about-inside p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .about-section .about-inside h5{
+        font-size: 1.3rem;
+    }
+
+    .about-section .about-inside h6{
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .about-section .about-main{
+        font-size:3rem;
+    }
+
+    .service-section h2{
+        font-size: 2.8rem;
+    }
+
+    .menu-section h2{
+        font-size: 2.8rem;
+    }
+
+    .banner .first-heading{
+        font-size: 1.6rem;
+    }
+    
+    .banner .secend-heading{
+        font-size: 5rem;
+    }
+    
+    .banner .thred-heading{
+        font-size: 1.8rem;
+    }
+
+    .banner::after{
+        position: absolute;
+        left: 0;
+        top: 94.5%;
+    }
+
+}
+
+@media only screen and (max-width:1030px){
+    .service-section .service-inside .box-one{
+        width: 100%;
+    }
+
+    .service-section .service-inside .box-one .text{
+          margin-top: 3rem;
+    }
+
+    .service-section .service-inside .box-one .text h4{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:610px){
+     .service-section .service-inside .box-one .text{
+        margin-top: 0rem;
+   }
+
+     .service-section .service-inside .box-one .text h4{
+      font-size: 1.2rem;
+   }
+
+     .testimonial-section h2{
+      font-size: 2.5rem;
+   }
+}
+
+@media only screen and (max-width:520px){
+    .service-section .service-inside .box-one .img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .service-section .service-inside .box-one .text{
+        width: 100%;
+    }
+
+    .offer-section .offer-top{
+        font-size: 3rem;
+    }
+
+    .offer-section .offer-main{
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    .offer-section form #Email{
+        width: 35%;
+    }
+
+    .banner::after{
+        position: absolute;
+        left: 0;
+        top: 97%;
+    }
+}
+
+@media only screen and (max-width:565px){
+    .offer-section form #Email{
+        width: 42%;
+    }
+
+    .offer-section::after{
+        position: absolute;
+        left: 0;
+        top: 98%;
+    }
+}
+
+@media only screen and (max-width:990px){
+    .menu-section .menu-inside .left-menu{
+        width: 100%;
+    }
+
+    .menu-section .menu-inside  h2{
+        text-align: center;
+    }
+
+    .menu-section .menu-inside .right-menu{
+        width: 100%;
+    }
+
+    .menu-section .menu-inside .text{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width:660px){
+    .menu-section .menu-inside .text{
+        margin-top: 0.6rem;
+    }
+
+}
+
+@media only screen and (max-width:450px){
+    .menu-section .menu-inside .text{
+        margin-top: 0rem;
+    }
+
+    .banner .first-heading{
+        font-size: 1.2rem;
+    }
+    
+    .banner .secend-heading{
+        font-size: 4rem;
+    }
+    
+    .banner .thred-heading{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:442px){
+    .menu-section .menu-inside .img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-section .menu-inside .text{
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .menu-section .menu-inside .img .price{
+        position: absolute;
+        top: 1%;
+        right: 12%;
+        padding: 1.1rem 1.1rem;
+    }
+}
+
+@media only screen and (max-width:981px){
+    .Reservation-section .Reservation-left{
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+    .Reservation-section .Reservation-left h6{
+        font-size: 1.2rem;
+    }
+
+    .Reservation-section .Reservation-form{
+        width: 100%;
+        text-align: center;
+        padding-right: 1rem;
+    }
+
+    .Reservation-section::after{
+        position: absolute;
+        left: 0;
+        top: 99%;
+   }
+}
+
+@media only screen and (max-width:510px){
+
+       .Reservation-section .Reservation-left h3{
+        font-size: 1.5rem; 
+     }
+
+       .Reservation-section .Reservation-left h2{
+        font-size: 3rem; 
+     }
+
+     .banner::after{
+        position: absolute;
+        left: 0;
+        top: 96%;  
+    }
+}
+
+@media only screen and (max-width:387px){
+       .Reservation-section .Reservation-left h3{
+        font-size: 1.2rem; 
+      }
+    
+       .Reservation-section .Reservation-left h2{
+         font-size: 2.3rem; 
+      }
+}
+
+@media only screen and (max-width:422px){
+       .Reservation-section .Reservation-form h2{
+         font-size: 1.8rem;
+      }
+
+       .navigation .logo{
+         font-size: 1.6rem;
+     }
+}
+
+@media only screen and (max-width:1075px){
+      .footer-section .box-one{
+         width: 48%;
+         margin-bottom: 2rem;
+     }
+}
+
+@media only screen and (max-width:560px){
+      .footer-section .box-one{
+         width: 100%;
+         margin-bottom: 2rem;
+    } 
+
+      .footer-section .box-one .follow-us{
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width:391px){
+      .Reservation-section .Reservation-left h6{
+         font-size: 0.9rem;
+     }
+}
+
+@media only screen and (max-width:330px){
+     .footer-section .footer-div p{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width:311px){
+      .about-section .about-inside h6{
+        font-size: 1rem;
+     }
+
+      .Reservation-section .Reservation-form h2{
+        font-size: 1.5rem;
+     }
+}
+
+@media only screen and (max-width:360px){
+    .banner .first-heading{
+        font-size: 1rem;
+    }
+    
+    .banner .secend-heading{
+        font-size: 3rem;
+    }
+    
+    .banner .thred-heading{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onix</title>
+  <!--google-fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+  <!--owl-style-sheet-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!--Bootstrap-css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--font-awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!--style-sheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .header {
+      position: relative;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      /* width: 60%; */
+      width: 725px;
+      height: 600px;
+      right: 0px;
+      top: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('images/banner-right-image.png');
+    }
+  </style>
+</head>
+
+<body>
+  <!--Header-section-->
+  <header class="header">
+    <nav class="navbar d-flex">
+      <div class="logo">
+        <a href="#"><img src="./images/logo.png" alt=""></a>
+      </div>
+      <ul class="nav-menu de-flex">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <button>
+          <a href="#">Contact Us Now</a>
+        </button>
+      </ul>
+      <button id="opne-menu" class="opne"><i class="fa-solid fa-bars"></i></button>
+      <button id="close-menu" class="close"><i class="fa-solid fa-xmark"></i></button>
+    </nav>
+  </header>
+
+  <!-------------------------Hero-section-------------------------->
+  <section class="hero-section" id="home">
+    <div class="hero-inner d-flex">
+      <!------owl-carousel-------->
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <h6>Welcome to Onix Digital</h6>
+          <h2>Build <span class="pri">your website</span> the best in <span class="sec">SEO</span>?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium tempora quidem ullam!
+          </p>
+          <div class="buttons d-flex">
+            <div class="bule-btn">
+              <a href="#contact">Message Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h6>Online Marketing</h6>
+          <h2>Get the <span class="pri">best ideas</span> for <span class="sec">your website</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi optio sit eos.</p>
+          <div class="buttons d-flex">
+            <div class="bule-btn">
+              <a href="#contact">Our Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h6>Video Tutorials</h6>
+          <h2>Watch <span class="pri">our videos</span> for your <span class="sec">projects</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iste expedita eaque ea.</p>
+          <div class="buttons d-flex">
+            <div class="bule-btn">
+              <a href="#contact">Watch Videos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------hero-img--------->
+      <!-- <div class="hero-img">
+
+      </div> -->
+    </div>
+    <!--left-side-img-->
+    <div class="left-side">
+      <img src="./images/baner-dec-left.png" alt="">
+    </div>
+  </section>
+
+  <!------------------------service-section-------------------------->
+  <section class="service-section" id="service">
+    <h2 class="main-heding">We <span class="pri">Provide</span> The Best <br> Service With <span class="sec">Our
+        Tools</span></h2>
+    <h2 class="sec-heading">OUR SERVICES</h2>
+    <!----service-inner--->
+    <div class="service-inner">
+      <div class="owl-carousel owl-theme our-service">
+        <div class="item">
+          <h4>Learn More about our Guidelines</h4>
+          <div class="icon"><img src="./images/service-icon-01.png" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+          <h4> The Best Strategy for Business</h4>
+          <div class="icon"><img src="./images/service-icon-02.png" alt=""></div>
+          <p>Get to know more about the topic in details</p>
+        </div>
+        <div class="item">
+          <h4>UI / UX Design and Development</h4>
+          <div class="icon"><img src="./images/service-icon-03.png" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+          <h4>Discover &amp; Explore our SEO Tips</h4>
+          <div class="icon"><img src="./images/service-icon-04.png" alt=""></div>
+          <p>Get to know more about the topic in details</p>
+        </div>
+        <div class="item">
+          <h4>Optimizing your websites for Speed</h4>
+          <div class="icon"><img src="./images/service-icon-01.png" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+          <h4>See The Strategy In The Market</h4>
+          <div class="icon"><img src="./images/service-icon-02.png" alt=""></div>
+          <p>Get to know more about the topic in details</p>
+        </div>
+      </div>
+    </div>
+    <!--service-left-->
+    <div class="service-left">
+      <img src="./images/services-left-dec.png" alt="">
+    </div>
+    <!--service-right-->
+    <div class="service-right">
+      <img src="./images/services-right-dec.png" alt="">
+    </div>
+  </section>
+
+  <!-------------------------about-section-------------------------->
+  <section class="about-section" id="about">
+    <div class="about-inner d-flex">
+      <div class="img-left">
+        <img src="./images/about-left-image.png" alt="">
+      </div>
+      <div class="about-content">
+        <h2>Grow Your Website With Our <span class="sec"> SEO Tools </span> & <span class="pri">Project</span>
+          Management</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nulla obcaecati beatae illum?</p>
+        <div class="about-content-inner d-flex">
+          <div class="content one">
+            <img src="./images/service-icon-01.png" alt="">
+            <h5>320</h5>
+            <span>Projects</span>
+            <hr>
+            <p>Lorem ipsum dolor sitti,</p>
+          </div>
+          <div class="content two">
+            <img src="./images/service-icon-02.png" alt="">
+            <h5>640</h5>
+            <span>Websites</span>
+            <hr>
+            <p>Lorem ipsum dolor sitti,</p>
+          </div>
+          <div class="content three">
+            <img src="./images/service-icon-03.png" alt="">
+            <h5>120</h5>
+            <span>Satisfied</span>
+            <hr>
+            <p>Lorem ipsum dolor sitti,</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------Portfolio-section------------------------------------>
+  <section class="portfolio-section" id="portfolio">
+    <h2 class="heading">Our Recent <span class="pri">Projects</span> & Case Studies <span class="sec">For Clients</span>
+    </h2>
+    <h2 class="sec-heading">OUR PORTFOLIO</h2>
+    <div class="owl-carousel owl-theme owl-portfolio">
+      <div class="item">
+        <div class="img">
+          <img src="./images/portfolio-01.jpg" alt="">
+          <div class="overly">
+            <a href="#">
+              <h4>First Project</h4>
+            </a>
+            <span>Plot Listing</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="./images/portfolio-02.jpg" alt="">
+          <div class="overly">
+            <a href="#">
+              <h4>two Project</h4>
+            </a>
+            <span>Space Dynamic SEO</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="./images/portfolio-03.jpg" alt="">
+          <div class="overly">
+            <a href="#">
+              <h4>three Project</h4>
+            </a>
+            <span>Website Marketing</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="./images/portfolio-04.jpg" alt="">
+          <div class="overly">
+            <a href="#">
+              <h4>four Project</h4>
+            </a>
+            <span>Digital Assets</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="./images/portfolio-01.jpg" alt="">
+          <div class="overly">
+            <a href="#">
+              <h4>Five Project</h4>
+            </a>
+            <span>SEO &amp; Marketing</span>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img src="./images/portfolio-02.jpg" alt="">
+          <div class="overly">
+            <a href="#">
+              <h4>six Project</h4>
+            </a>
+            <span>Plot Listing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="images">
+      <img src="./images/portfolio-left-dec.png" alt="">
+    </div>
+  </section>
+
+  <!----------------------------Plan-section--------------------------------->
+  <section class="plan-section">
+    <h2 class="heading">Select A Suitable <span class="pri">Plan</span> For Your Next <span class="sec">Projects</span>
+    </h2>
+    <h2 class="sec-heading">OUR PLANS</h2>
+    <div class="plan-inner d-flex">
+      <div class="card one">
+        <div class="card-body">
+          <h4 class="card-title">Starter Plan</h4>
+          <span class="price">$160/mo</span>
+          <p><span class="offer">$140</span></p>
+          <li>10 Projects</li>
+          <li>100 GB space</li>
+          <li>20 SEO checkups</li>
+          <li>Basic Support</li>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+        <!--images-->
+        <div class="top"><img src="./images/first-plan-bg.png" alt=""></div>
+      </div>
+      <div class="card two">
+        <div class="card-body">
+          <h4 class="card-title">Standard Plan</h4>
+          <span class="price">$240/mo</span>
+          <p><span class="offer">$200</span></p>
+          <li>20 Projects</li>
+          <li>200 GB space</li>
+          <li>50 SEO checkups</li>
+          <li>Pro Support</li>
+          <a href="#" class="btn btn-primary">Get it now</a>
+        </div>
+        <!--images-->
+        <div class="top"><img src="./images/second-plan-bg.png" alt=""></div>
+      </div>
+      <div class="card three">
+        <div class="card-body">
+          <h4 class="card-title">Advanced Plan</h4>
+          <span class="price">$360/mo</span>
+          <p><span class="offer">$280</span></p>
+          <li>30 Projects</li>
+          <li>300 GB space</li>
+          <li>100 SEO checkups</li>
+          <li>Best Support</li>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+        <!--images-->
+        <div class="top"><img src="./images/third-plan-bg.png" alt=""></div>
+      </div>
+    </div>
+    <!--images-->
+    <div class="left-side">
+      <img src="./images/tables-left-dec.png" alt="">
+    </div>
+    <div class="right-side">
+      <img src="./images/tables-right-dec.png" alt="">
+    </div>
+  </section>
+
+  <!------------------------------Contact-section----------------------------------------->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <h2>Feel Free To <span class="pri">Contact</span> Us</h2>
+      <div class="inner-content d-flex">
+        <div class="map">
+          <iframe
+            src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+          <div class="info">
+            <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span>
+            <span><i class="fa fa-envelope"></i> <a href="#">info@company.com</a></span>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#">
+            <input type="text" placeholder="Name" required> <br>
+            <input type="text" placeholder="Surname" required> <br>
+            <input type="email" placeholder="Your Email" required> <br>
+            <input type="url" placeholder="Your Website URL" required> <br>
+            <button type="submit">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--images-->
+    <div class="left-side">
+      <img src="./images/contact-left-dec.png" alt="">
+    </div>
+    <div class="left-right">
+      <img src="./images/contact-dec.png" alt="">
+    </div>
+  </section>
+
+  <!-----------------------------Footer-section---------------------------------------->
+  <footer class="footer-section">
+    <div class="footer-inner">
+      <div class="footer-content d-flex">
+        <div class="about footer-item">
+          <div class="logo">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <a href="">info@company.com</a>
+          <ul class="d-flex">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-behance"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="services footer-item">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">SEO Development</a></li>
+            <li><a href="#">Business Growth</a></li>
+            <li><a href="#">Social Media Managment</a></li>
+            <li><a href="#">Website Optimization</a></li>
+          </ul>
+        </div>
+        <div class="community footer-item">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Business Ideas</a></li>
+            <li><a href="#">Website Checkup</a></li>
+            <li><a href="#">Page Speed Test</a></li>
+          </ul>
+        </div>
+        <div class="subscribe-newsletters footer-item">
+          <h4 class="subs">Subscribe Newsletters</h4>
+          <p>Get our latest news and ideas to your inbox</p>
+          <form action="#" method="get">
+            <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+            <button type="submit" id="form-submit" class="main-button "><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2021 Onix Digital Co., Ltd.
+          <br>
+          All Rights Reserved. Designed by <a href="#">TemplateMo</a>
+        </p>
+      </div>
+    </div>
+    <!--images-->
+    <div class="image">
+      <img src="./images/footer-dec.png" alt="">
+    </div>
+  </footer>
+
+
+
+  <!--owl-carousel-js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!--js-links-->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
